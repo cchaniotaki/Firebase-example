@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputLayoutWithEditTextView">
+        <attr name="itemInputLayout" format="string" />
+        <attr name="itemEditTextValue" format="string" />
+        <attr name="itemEditTextHint" format="string" />
+        <attr name="android:inputType"/>
+        <attr name="android:imeOptions"/>
+    </declare-styleable>
+</resources>

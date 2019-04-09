@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/spacingHuge"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/spacingSmall"
+        android:background="@color/white">
+
+    <TextView
+            android:id="@+id/signInText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/spacingMedium"
+            android:padding="@dimen/spacingMedium"
+            android:text="@string/register_sign_up"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textExtraHuge"/>
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.chnt.gr.preOrder.view.InputLayoutWithEditTextView
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                app:itemEditTextHint="@string/email"/>
+
+            <com.chnt.gr.preOrder.view.InputLayoutWithEditTextView
+                    android:id="@+id/passwordInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacingLarge"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext"
+                    app:itemEditTextHint="@string/password"/>
+
+            <com.chnt.gr.preOrder.view.InputLayoutWithEditTextView
+                    android:id="@+id/firstnameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:imeOptions="actionNext"
+                    app:itemEditTextHint="@string/firstName"/>
+
+            <com.chnt.gr.preOrder.view.InputLayoutWithEditTextView
+                    android:id="@+id/lastnameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:imeOptions="actionNext"
+                    app:itemEditTextHint="@string/lastName"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacingTiny"
+            android:layout_marginEnd="@dimen/spacingTiny"
+            android:layout_weight="1">
+
+        <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/pink"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/login_continue"
+                tools:targetApi="m"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

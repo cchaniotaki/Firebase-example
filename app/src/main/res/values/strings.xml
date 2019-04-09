@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Firebase Example </string>
+
+    <string name="please_wait">Please wait…</string>
+    <string name="login_sign_in">Sign in</string>
+    <string name="register_sign_up">Sign Up</string>
+    <string name="log_out">Log out</string>
+    <string name="login_continue">Continue</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="phone">Phone</string>
+</resources>
